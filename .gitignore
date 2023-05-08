@@ -1,0 +1,5 @@
+#vscode
+vscode/
+
+#scss/sass compile
+*.map
