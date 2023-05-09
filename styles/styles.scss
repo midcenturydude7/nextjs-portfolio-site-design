@@ -67,7 +67,7 @@ nav {
   max-width: 1200px;
   border: 1px solid #cfcfcf41;
   border-left: 10px solid #8b77fc;
-  padding: 1.25em;
+  padding: 0.65em 1.25em;
   border-radius: 8px;
   background: #ececec1e;
 }
@@ -115,16 +115,23 @@ li a {
 
 .logo {
   text-align: center;
+  font-size: 0.85rem;
+  color: #9889ec;
+  padding: 0.5em 0.75em;
+  border: 1px solid #cfcfcf41;
+  border-radius: 5px;
+  background: #ececec10;
+  box-shadow: inset 0 0 1px 2px #dbdbdb27;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 60%;
 }
 
 .navbar > li + li {
   border-left: 1px solid #cfcfcf41;
-  padding-left: 3em;
+  padding-left: 2.5em;
 }
