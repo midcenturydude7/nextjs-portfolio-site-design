@@ -206,10 +206,12 @@ main .main-content {
 }
 main .main-content .main-title {
   font-size: 5.5vw;
+  font-weight: 600;
   letter-spacing: 0.03em;
 }
 main .main-content .gradient {
   font-size: 6.5vw;
+  font-weight: 700;
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -230,6 +232,29 @@ main .main-content p {
   margin: 0;
   padding: 1em;
   border-top: 1px solid rgba(207, 207, 207, 0.2549019608);
+}
+
+section {
+  max-width: 1200px;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+
+.section-box {
+  width: 33vw;
+  height: 40vh;
+  background: rgba(236, 236, 236, 0.1176470588);
+  border-radius: 8px;
+  border: 1px solid rgba(207, 207, 207, 0.2549019608);
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 2px 2px rgba(219, 219, 219, 0.0823529412);
 }
 
 @keyframes animate {
