@@ -175,7 +175,7 @@ li a {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 60%;
   margin-right: 0.75em;
@@ -183,7 +183,7 @@ li a {
 
 .navbar > li + li {
   border-left: 1px solid #cfcfcf41;
-  padding-left: 2.5em;
+  padding: 0 0 0 3em;
 }
 
 /* MAIN: HERO SECTION */
@@ -198,7 +198,7 @@ main {
 }
 
 .hero-image--container {
-  width: 33%;
+  width: 25%;
   margin: 0;
   padding: 0;
   border-radius: 50%;
