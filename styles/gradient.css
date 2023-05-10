@@ -37,8 +37,8 @@
   position: absolute;
   border-radius: inherit;
   inset: 0;
-  width: 103.75%;
-  height: 102%;
+  width: 105%;
+  height: 102.5%;
   background: conic-gradient(
     from var(--gradient-angle),
     var(--clr-1),
