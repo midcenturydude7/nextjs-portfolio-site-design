@@ -259,4 +259,15 @@ main {
   main .main-content {
     margin-left: 2.5em;
   }
+}
+@media (min-width: 2000px) {
+  .main-title {
+    font-size: 4vw;
+  }
+  .gradient {
+    font-size: 5vw;
+  }
+  .main-content > p {
+    font-size: 2vw;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -280,3 +280,17 @@ main {
     }
   }
 }
+
+@media (min-width: 2000px) {
+  .main-title {
+    font-size: 4vw;
+  }
+
+  .gradient {
+    font-size: 5vw;
+  }
+
+  .main-content > p {
+    font-size: 2vw;
+  }
+}
