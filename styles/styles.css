@@ -245,4 +245,15 @@ main {
   100% {
     background-position: right;
   }
+}
+@media (min-width: 1000px) {
+  main {
+    justify-content: center;
+  }
+  main .hero-image--container {
+    margin-right: 2.5em;
+  }
+  main .main-content {
+    margin-left: 2.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */
