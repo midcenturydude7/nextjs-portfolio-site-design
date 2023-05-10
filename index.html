@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/gradient.css" />
     <title>CSS Background Practice</title>
   </head>
   <body>
-    <main class="wrapper">
+    <div class="wrapper">
       <header>
         <nav>
           <ul class="logo">
@@ -21,8 +22,16 @@
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
-        <h1>MG[dev] Home Page Design</h1>
       </header>
-    </main>
+      <main>
+        <div class="hero-image--container">
+          <img src="./images/MG_Avatar.jpg" alt="Avatar" class="hero-image" />
+        </div>
+        <div class="main-content">
+          <h1 class="main-title"><span class="gradient">Hi,</span> I'm Matt</h1>
+          <p>I build things for the web</p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

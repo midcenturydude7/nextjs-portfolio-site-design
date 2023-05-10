@@ -1,0 +1,79 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: hsl(240deg 85% 45%) 0%;
+  --clr-2: hsl(209, 90%, 42%) 10%;
+  --clr-3: hsl(257, 40%, 48%) 20%;
+  --clr-4: hsl(261deg 98% 35%) 30%;
+  --clr-5: hsl(265deg 100% 33%) 40%;
+  --clr-6: hsl(204, 100%, 30%) 50%;
+  --clr-7: hsl(172, 100%, 28%) 60%;
+  --clr-8: hsl(274deg 100% 26%) 70%;
+  --clr-9: hsl(277, 32%, 33%) 80%;
+  --clr-10: hsl(59, 85%, 45%) 90%;
+  --clr-11: hsl(250, 79%, 59%) 100%;
+  --gradient-02: linear-gradient(
+    45deg,
+    hsl(240deg 85% 45%) 0%,
+    hsl(209, 90%, 42%) 10%,
+    hsl(257, 40%, 48%) 20%,
+    hsl(261deg 98% 35%) 30%,
+    hsl(265deg 100% 33%) 40%,
+    hsl(204, 100%, 30%) 50%,
+    hsl(172, 100%, 28%) 60%,
+    hsl(274deg 100% 26%) 70%,
+    hsl(277, 32%, 33%) 80%,
+    hsl(59, 85%, 45%) 90%,
+    hsl(250, 79%, 59%) 100%
+  );
+}
+.hero-image--container::before,
+.hero-image--container::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  width: 103.75%;
+  height: 102%;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-6),
+    var(--clr-7),
+    var(--clr-8),
+    var(--clr-9),
+    var(--clr-11),
+    var(--clr-9),
+    var(--clr-8),
+    var(--clr-7),
+    var(--clr-6),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1)
+  );
+  animation: rotation 20s linear infinite;
+  z-index: -1;
+}
+
+.hero-image {
+  margin: 0.4275em 0 0 0.8em;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
