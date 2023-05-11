@@ -176,10 +176,9 @@ header {
       justify-content: flex-end;
       width: 100%;
 
-      li a {
-        display: inline-block;
+      li {
+        width: 140px;
         text-align: center;
-        width: 135px;
       }
 
       li + li {

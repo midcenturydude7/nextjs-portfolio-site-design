@@ -164,10 +164,9 @@ header nav .navbar {
   justify-content: flex-end;
   width: 100%;
 }
-header nav .navbar li a {
-  display: inline-block;
+header nav .navbar li {
+  width: 140px;
   text-align: center;
-  width: 135px;
 }
 header nav .navbar li + li {
   border-left: 1px solid rgba(207, 207, 207, 0.2549019608);
