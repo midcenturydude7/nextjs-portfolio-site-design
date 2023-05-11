@@ -90,10 +90,15 @@ img {
     position: absolute;
     right: -5%;
     top: 90%;
-    transform: rotateZ(-4deg);
+    // transform: rotateZ(-5.5deg);
+    transition: transform 1s ease-in-out;
     transform-origin: 0 0;
     background: #8b77fc;
     box-shadow: 0 0 80px 120px #0a0025;
+    opacity: 0;
+
+    animation: slide-up 1.75s ease-in 1s forwards;
+    // rotate-down 1s 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
   }
 }
 
@@ -273,37 +278,47 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 2.5em;
-}
 
-.section-box {
-  width: 33vw;
-  height: 40vh;
-  background: #ececec1e;
-  border-radius: 8px;
-  border: 1px solid #cfcfcf41;
-  padding: 1em;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 2px 2px #dbdbdb15;
-  cursor: pointer;
-  position: relative;
-  opacity: 0;
-  animation: boxes 2s ease-in-out 1s forwards, pulse 4s infinite 2.75s;
+  .section-box {
+    width: 33vw;
+    height: 40vh;
+    background: #ececec1e;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf41;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 2px 2px #dbdbdb15;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    animation: boxes 2s ease-in-out 2s forwards, pulse 4s infinite 3.75s;
 
-  &:hover {
-    animation-play-state: paused;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  .section-box:nth-child(2) {
+    animation: boxes 2s ease-in-out 2.75s forwards, pulse 4s infinite 4.5s;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }
 
-.section-box:nth-child(2) {
-  animation: boxes 2s ease-in-out 1.5s forwards, pulse 4s infinite 3.5s;
-
-  &:hover {
-    animation-play-state: paused;
-  }
+/* FOOTER SECTION */
+footer {
+  position: absolute;
+  bottom: 4vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
 }
 
 /* ANIMATIONS */
@@ -360,6 +375,46 @@ section {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  85% {
+    transform: rotateZ(-5deg);
+  }
+  90% {
+    transform: rotateZ(-4.25deg);
+  }
+  95% {
+    transform: rotateZ(-4.5deg);
+  }
+  100% {
+    transform: rotateZ(-4deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-up {
+  0% {
+    transform: rotateZ(-2deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateZ(-5.5deg);
+  }
+  100% {
+    transform: rotateZ(-4deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-down {
+  100% {
+    transform: rotateZ(-4deg);
   }
 }
 
