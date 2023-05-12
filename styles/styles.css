@@ -7,6 +7,8 @@
 }
 
 :root {
+  --slide-01: slide-up-bounce 1.75s ease-in 1s forwards;
+  --slide-02: slide-down 1.75s ease-in-out forwards;
   --clr-1: hsl(240deg 85% 45%) 0%;
   --clr-2: hsl(209, 90%, 42%) 10%;
   --clr-3: hsl(257, 40%, 48%) 20%;
@@ -69,7 +71,7 @@ img {
   transform-style: preserve-3d;
   height: 100vh;
   perspective: 100px;
-  background: rgb(1, 8, 22);
+  background-color: rgb(1, 8, 22);
   background: -moz-linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
   background: -webkit-linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
   background: linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
@@ -87,7 +89,7 @@ img {
   background: #8b77fc;
   box-shadow: 0 0 80px 120px #0a0025;
   opacity: 0;
-  animation: slide-up-bounce 1.75s ease-in 1s forwards;
+  animation: var(--slide-01);
 }
 
 /* HEADER: NAVBAR */
