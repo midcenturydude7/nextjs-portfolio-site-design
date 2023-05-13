@@ -24,7 +24,7 @@ sectionBox.addEventListener("mouseover", () => {
 sectionBox.addEventListener("mouseout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
-    "slide-up-bounce 1s ease-in forwards"
+    "slide-up-nobounce 1s ease-in forwards"
   );
   footerElem.style.setProperty(
     "--slide-03",
@@ -48,7 +48,7 @@ sectionBoxTwo.addEventListener("mouseover", () => {
 sectionBoxTwo.addEventListener("mouseout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
-    "slide-up-bounce 1s ease-in forwards"
+    "slide-up-nobounce 1s ease-in forwards"
   );
   footerElem.style.setProperty(
     "--slide-03",
