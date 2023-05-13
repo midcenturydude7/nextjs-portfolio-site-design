@@ -280,7 +280,7 @@ section .section-box:nth-child(2):hover {
 }
 
 /* FOOTER SECTION */
-footer {
+.footer {
   position: absolute;
   bottom: 4vh;
   left: 0;
@@ -289,14 +289,14 @@ footer {
   z-index: 10;
   transition: all 0.3s ease;
   opacity: 0;
-  animation: slide-up-content 1s ease-in-out 1.5s forwards;
+  animation: var(--slide-03, slide-up-content 1s ease-in-out 1.5s forwards);
 }
-footer p {
+.footer p {
   font-size: 0.8rem;
   font-weight: 600;
   color: #342b66;
 }
-footer p span {
+.footer p span {
   padding-left: 0.25em;
   border-left: 2.5px solid rgba(52, 43, 102, 0.5568627451);
 }
@@ -392,6 +392,19 @@ footer p span {
   }
   100% {
     transform: rotateZ(0deg) translateY(100px);
+    opacity: 0;
+  }
+}
+@keyframes slide-down-content {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(100px);
     opacity: 0;
   }
 }
