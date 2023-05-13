@@ -7,8 +7,6 @@
 }
 
 :root {
-  --slide-01: slide-up-bounce 1.75s ease-in 1s forwards;
-  --slide-02: slide-down 1.75s ease-in-out forwards;
   --clr-1: hsl(240deg 85% 45%) 0%;
   --clr-2: hsl(209, 90%, 42%) 10%;
   --clr-3: hsl(257, 40%, 48%) 20%;
@@ -76,6 +74,7 @@ img {
   background: -webkit-linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
   background: linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010816",endColorstr="#040e2f",GradientType=1);
+  --slide-01: slide-up-bounce 1.75s ease-in 1s forwards;
 }
 .wrapper::after {
   content: "";
@@ -89,7 +88,7 @@ img {
   background: #8b77fc;
   box-shadow: 0 0 80px 120px #0a0025;
   opacity: 0;
-  animation: var(--slide-01);
+  animation: var(--slide-02, slide-up-bounce 1.75s ease-in 1s forwards);
 }
 
 /* HEADER: NAVBAR */
@@ -268,13 +267,13 @@ section .section-box {
   cursor: pointer;
   position: relative;
   opacity: 0;
-  animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 2.4s forwards, pulse 4s infinite 4.1s;
+  animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 2.4s forwards, pulse 4s infinite 4.25s;
 }
 section .section-box:hover {
   animation-play-state: paused;
 }
 section .section-box:nth-child(2) {
-  animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 3.1s forwards, pulse 4s infinite 4.85s;
+  animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 3.1s forwards, pulse 4s infinite 5s;
 }
 section .section-box:nth-child(2):hover {
   animation-play-state: paused;
@@ -293,6 +292,8 @@ footer {
   animation: slide-up-content 1s ease-in-out 1.5s forwards;
 }
 footer p {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #342b66;
 }
 footer p span {
@@ -386,11 +387,11 @@ footer p span {
 }
 @keyframes slide-down {
   0% {
-    transform: translateY(0);
+    transform: rotateZ(-4deg) translateY(0);
     opacity: 1;
   }
   100% {
-    transform: translateY(-100px);
+    transform: rotateZ(0deg) translateY(100px);
     opacity: 0;
   }
 }
