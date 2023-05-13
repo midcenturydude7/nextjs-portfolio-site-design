@@ -8,6 +8,7 @@ const footerElem = document.querySelector(".footer");
 
 console.log(footerElem);
 
+// BOX ONE: MOUSEOVER
 sectionBox.addEventListener("mouseover", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
@@ -19,6 +20,7 @@ sectionBox.addEventListener("mouseover", () => {
   );
 });
 
+// BOX ONE: MOUSEOUT
 sectionBox.addEventListener("mouseout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
@@ -30,6 +32,7 @@ sectionBox.addEventListener("mouseout", () => {
   );
 });
 
+// BOX TWO: MOUSEOVER
 sectionBoxTwo.addEventListener("mouseover", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
@@ -41,6 +44,7 @@ sectionBoxTwo.addEventListener("mouseover", () => {
   );
 });
 
+// BOX TWO: MOUSEOUT
 sectionBoxTwo.addEventListener("mouseout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
