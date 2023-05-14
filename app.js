@@ -9,7 +9,7 @@ const footerElem = document.querySelector(".footer");
 console.log(footerElem);
 
 // BOX ONE: MOUSEOVER
-sectionBox.addEventListener("mouseover", () => {
+sectionBox.addEventListener("pointerover", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
     "slide-down 1s ease-in-out backwards"
@@ -21,7 +21,7 @@ sectionBox.addEventListener("mouseover", () => {
 });
 
 // BOX ONE: MOUSEOUT
-sectionBox.addEventListener("mouseout", () => {
+sectionBox.addEventListener("pointerout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
     "slide-up-nobounce 1s ease-in forwards"
@@ -33,7 +33,7 @@ sectionBox.addEventListener("mouseout", () => {
 });
 
 // BOX TWO: MOUSEOVER
-sectionBoxTwo.addEventListener("mouseover", () => {
+sectionBoxTwo.addEventListener("pointerover", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
     "slide-down 1s ease-in-out backwards"
@@ -45,7 +45,7 @@ sectionBoxTwo.addEventListener("mouseover", () => {
 });
 
 // BOX TWO: MOUSEOUT
-sectionBoxTwo.addEventListener("mouseout", () => {
+sectionBoxTwo.addEventListener("pointerout", () => {
   wrapperElem.style.setProperty(
     "--slide-02",
     "slide-up-nobounce 1s ease-in forwards"
