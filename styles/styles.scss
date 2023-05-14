@@ -631,6 +631,10 @@ section {
 }
 
 @media (min-width: 2000px) {
+  header {
+    width: 70%;
+  }
+
   main {
     .main-content {
       .main-title {
@@ -645,5 +649,11 @@ section {
         font-size: 2vw;
       }
     }
+  }
+}
+
+@media (min-width: 2500px) {
+  header {
+    width: 55%;
   }
 }

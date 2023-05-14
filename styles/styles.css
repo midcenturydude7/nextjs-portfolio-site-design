@@ -553,6 +553,9 @@ section .section-box:nth-child(2):hover {
   }
 }
 @media (min-width: 2000px) {
+  header {
+    width: 70%;
+  }
   main .main-content .main-title {
     font-size: 4vw;
   }
@@ -561,5 +564,10 @@ section .section-box:nth-child(2):hover {
   }
   main .main-content p {
     font-size: 2vw;
+  }
+}
+@media (min-width: 2500px) {
+  header {
+    width: 55%;
   }
 }/*# sourceMappingURL=styles.css.map */
