@@ -67,7 +67,7 @@ img {
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
-  min-height: 110vh;
+  min-height: 100vh;
   perspective: 100px;
   background-color: rgb(1, 8, 22);
   background: -moz-linear-gradient(
@@ -109,7 +109,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   height: 12vh;
-  animation: navbar 1s ease-in-out forwards;
 
   nav {
     display: flex;
@@ -121,6 +120,7 @@ header {
     padding: 0.65em 1.25em;
     border-radius: 8px;
     background: #ececec1e;
+    animation: navbar 1s ease-in-out forwards;
 
     ul {
       display: flex;
@@ -196,6 +196,8 @@ header {
     width: auto;
     border-right: 10px solid #8b77fc;
     border-left: 1px solid #cfcfcf41;
+    opacity: 0;
+    animation-delay: 0.5s;
   }
 
   li + li {
@@ -284,7 +286,7 @@ main {
 
 section {
   max-width: 1200px;
-  margin-top: 3em;
+  margin: 3em 0 4em;
   display: flex;
   justify-content: space-between;
   gap: 2.5em;
@@ -314,7 +316,6 @@ section {
       box-shadow: 0px 0px 20px 10px rgba(71, 71, 71, 0.5);
       border-color: #8b77fca9;
       padding: 0;
-      height: auto;
 
       .box-banner {
         opacity: 1;

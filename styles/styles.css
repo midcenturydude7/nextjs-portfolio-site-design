@@ -67,7 +67,7 @@ img {
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
-  min-height: 110vh;
+  min-height: 100vh;
   perspective: 100px;
   background-color: rgb(1, 8, 22);
   background: -moz-linear-gradient(0deg, rgb(1, 8, 22) 80%, rgb(10, 2, 37) 98%);
@@ -99,7 +99,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   height: 12vh;
-  animation: navbar 1s ease-in-out forwards;
 }
 header nav {
   display: flex;
@@ -111,6 +110,7 @@ header nav {
   padding: 0.65em 1.25em;
   border-radius: 8px;
   background: rgba(236, 236, 236, 0.1176470588);
+  animation: navbar 1s ease-in-out forwards;
 }
 header nav ul {
   display: flex;
@@ -179,6 +179,8 @@ header nav:nth-child(2) {
   width: auto;
   border-right: 10px solid #8b77fc;
   border-left: 1px solid rgba(207, 207, 207, 0.2549019608);
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 header li + li {
   margin-left: 1em;
@@ -256,7 +258,7 @@ main .main-content p {
 
 section {
   max-width: 1200px;
-  margin-top: 3em;
+  margin: 3em 0 4em;
   display: flex;
   justify-content: space-between;
   gap: 2.5em;
@@ -285,7 +287,6 @@ section .section-box:hover {
   box-shadow: 0px 0px 20px 10px rgba(71, 71, 71, 0.5);
   border-color: rgba(139, 119, 252, 0.662745098);
   padding: 0;
-  height: auto;
 }
 section .section-box:hover .box-banner {
   opacity: 1;
