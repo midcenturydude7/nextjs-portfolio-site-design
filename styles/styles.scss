@@ -280,7 +280,7 @@ section {
 
   .section-box {
     width: 33vw;
-    height: 500px;
+    height: 40vh;
     background: #ececec1e;
     border-radius: 8px;
     border: 1px solid #cfcfcf41;
@@ -310,7 +310,8 @@ section {
       }
 
       img {
-        height: 200px;
+        height: 45%;
+        padding-bottom: 0;
         border-bottom: none;
         filter: grayscale(100%) blur(2px);
         object-fit: cover;
@@ -320,14 +321,13 @@ section {
       }
 
       .box-text {
-        height: 30vh;
-        transition: height 0.4s ease, border-top 0.2s 0.6s ease-in,
-          margin-top 0.8s ease;
-        margin-top: 2.75em;
+        margin-top: 3.25em;
+        padding: 1.25em 1.2em;
         border-top: 1px solid #8b77fca9;
+        transition: border-top 0.2s 0.6s ease-in, margin-top 0.8s ease;
 
         h2 {
-          padding-bottom: 0.5em;
+          padding-bottom: 0.25em;
           color: #8b77fc;
         }
 
@@ -361,7 +361,7 @@ section {
 
     img {
       width: 100%;
-      height: 300px;
+      height: 65%;
       object-fit: cover;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -377,7 +377,7 @@ section {
       display: flex;
       flex-direction: column;
       border-top: none;
-      transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease;
 
       a {
         color: inherit;
@@ -388,28 +388,9 @@ section {
       h2 {
         font-weight: 500;
 
-        a {
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: #8b77fc;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: all 0.3s ease-in-out;
-          }
-
-          &:hover {
-            color: #8b77fc;
-            &::after {
-              transform: scaleX(1);
-            }
-          }
+        &:hover {
+          color: #a698f8;
+          transition: color 0.4s ease;
         }
       }
 
@@ -423,28 +404,9 @@ section {
         span {
           color: #8b77fc;
 
-          a {
-            position: relative;
-
-            &::after {
-              content: "";
-              position: absolute;
-              bottom: -5px;
-              left: 0;
-              width: 83.5%;
-              height: 2px;
-              background: #8b77fc;
-              transform: scaleX(0);
-              transform-origin: left;
-              transition: all 0.3s ease-in-out;
-            }
-
-            &:hover {
-              color: #8b77fc;
-              &::after {
-                transform: scaleX(1);
-              }
-            }
+          &:hover {
+            color: #a698f8;
+            transition: color 0.4s ease;
           }
         }
       }

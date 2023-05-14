@@ -254,7 +254,7 @@ section {
 }
 section .section-box {
   width: 33vw;
-  height: 500px;
+  height: 40vh;
   background: rgba(236, 236, 236, 0.1176470588);
   border-radius: 8px;
   border: 1px solid rgba(207, 207, 207, 0.2549019608);
@@ -282,7 +282,8 @@ section .section-box:hover .box-banner {
   transition: opacity 0.4s ease;
 }
 section .section-box:hover img {
-  height: 200px;
+  height: 45%;
+  padding-bottom: 0;
   border-bottom: none;
   filter: grayscale(100%) blur(2px);
   object-fit: cover;
@@ -291,13 +292,13 @@ section .section-box:hover img {
   transition: height transform 0.8s ease, border-bottom 0.2s 0.6s ease-in;
 }
 section .section-box:hover .box-text {
-  height: 30vh;
-  transition: height 0.4s ease, border-top 0.2s 0.6s ease-in, margin-top 0.8s ease;
-  margin-top: 2.75em;
+  margin-top: 3.25em;
+  padding: 1.25em 1.2em;
   border-top: 1px solid rgba(139, 119, 252, 0.662745098);
+  transition: border-top 0.2s 0.6s ease-in, margin-top 0.8s ease;
 }
 section .section-box:hover .box-text h2 {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.25em;
   color: #8b77fc;
 }
 section .section-box:hover .box-text p {
@@ -326,7 +327,7 @@ section .section-box .box-banner {
 }
 section .section-box img {
   width: 100%;
-  height: 300px;
+  height: 65%;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -341,7 +342,7 @@ section .section-box .box-text {
   display: flex;
   flex-direction: column;
   border-top: none;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease;
 }
 section .section-box .box-text a {
   color: inherit;
@@ -351,26 +352,9 @@ section .section-box .box-text a {
 section .section-box .box-text h2 {
   font-weight: 500;
 }
-section .section-box .box-text h2 a {
-  position: relative;
-}
-section .section-box .box-text h2 a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #8b77fc;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 0.3s ease-in-out;
-}
-section .section-box .box-text h2 a:hover {
-  color: #8b77fc;
-}
-section .section-box .box-text h2 a:hover::after {
-  transform: scaleX(1);
+section .section-box .box-text h2:hover {
+  color: #a698f8;
+  transition: color 0.4s ease;
 }
 section .section-box .box-text p {
   font-size: 0.9rem;
@@ -382,26 +366,9 @@ section .section-box .box-text p {
 section .section-box .box-text p span {
   color: #8b77fc;
 }
-section .section-box .box-text p span a {
-  position: relative;
-}
-section .section-box .box-text p span a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 83.5%;
-  height: 2px;
-  background: #8b77fc;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 0.3s ease-in-out;
-}
-section .section-box .box-text p span a:hover {
-  color: #8b77fc;
-}
-section .section-box .box-text p span a:hover::after {
-  transform: scaleX(1);
+section .section-box .box-text p span:hover {
+  color: #a698f8;
+  transition: color 0.4s ease;
 }
 section .section-box:nth-child(2) {
   animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 3.1s forwards, pulse 4s infinite 5s;
