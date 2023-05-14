@@ -279,7 +279,7 @@ section {
   gap: 2.5em;
 
   .section-box {
-    width: 33vw;
+    width: 33.3vw;
     height: 40vh;
     background: #ececec1e;
     border-radius: 8px;
@@ -310,24 +310,28 @@ section {
       }
 
       img {
-        height: 45%;
-        padding-bottom: 0;
-        border-bottom: none;
+        height: 40%;
         filter: grayscale(100%) blur(2px);
-        object-fit: cover;
         opacity: 0.5;
+        z-index: -1;
         transform: scale(1.5);
-        transition: height transform 0.8s ease, border-bottom 0.2s 0.6s ease-in;
+        transition: height transform 0.8s ease;
       }
 
       .box-text {
-        margin-top: 3.25em;
-        padding: 1.25em 1.2em;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        height: 100%;
+        padding: 1.25em 1em 1.25em 1.2em;
         border-top: 1px solid #8b77fca9;
-        transition: border-top 0.2s 0.6s ease-in, margin-top 0.8s ease;
+        background-color: #15072493;
+        z-index: 1;
+        transition: height border-top 2.5s ease,
+          background-color 0.2s ease;
 
         h2 {
-          padding-bottom: 0.25em;
+          margin-bottom: 0.25em;
           color: #8b77fc;
         }
 
@@ -366,18 +370,23 @@ section {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom: 5px solid #cfcfcf7a;
+      margin-bottom: 1em;
       padding-bottom: 0.2em;
       filter: brightness(50%) grayscale(0);
       transition: all 1s ease;
+      z-index: -1;
     }
 
     .box-text {
       position: relative;
-      padding: 1.25em 1em;
+      height: 50px;
+      margin: 0;
+      padding: 0 1em;
       display: flex;
       flex-direction: column;
       border-top: none;
       transition: all 0.4s ease;
+      z-index: 10;
 
       a {
         color: inherit;
