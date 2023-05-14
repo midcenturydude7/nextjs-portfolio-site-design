@@ -51,7 +51,6 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #d4d4d4;
-  min-height: 100vh;
 }
 
 img {
@@ -68,7 +67,7 @@ img {
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
-  height: 100vh;
+  min-height: 110vh;
   perspective: 100px;
   background-color: rgb(1, 8, 22);
   background: -moz-linear-gradient(
