@@ -267,7 +267,7 @@ section .section-box {
   box-shadow: inset 0 0 2px 2px rgba(219, 219, 219, 0.0823529412);
   position: relative;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease;
   overflow: hidden;
   animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 2.4s forwards, pulse 4s infinite 4.25s;
 }
@@ -293,9 +293,9 @@ section .section-box:hover .box-text {
   height: 100%;
   padding: 1.25em 1em 1.25em 1.2em;
   border-top: 1px solid rgba(139, 119, 252, 0.662745098);
-  background-color: rgba(21, 7, 36, 0.5764705882);
+  background-image: linear-gradient(0deg, hsl(249, 96%, 73%) 0%, hsl(250, 71%, 66%) 1%, hsl(251, 54%, 60%) 4%, hsl(252, 42%, 53%) 7%, hsl(253, 37%, 47%) 10%, hsla(254, 38%, 41%, 0.945) 14%, hsla(255, 39%, 35%, 0.877) 20%, hsla(256, 40%, 30%, 0.74) 26%, hsla(257, 41%, 24%, 0.63) 34%, hsla(258, 42%, 19%, 0.373) 44%, hsla(260, 46%, 14%, 0.352) 59%, hsla(269, 66%, 8%, 0.352) 99%);
   z-index: 1;
-  transition: height border-top 2.5s ease, background-color 0.2s ease;
+  transition: height border-top 2.5s ease, background-image 0.2s ease;
 }
 section .section-box:hover .box-text h2 {
   margin-bottom: 0.25em;
