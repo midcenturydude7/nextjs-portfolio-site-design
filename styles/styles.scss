@@ -238,6 +238,7 @@ main {
       font-size: 5.5vw;
       font-weight: 600;
       letter-spacing: 0.03em;
+      cursor: pointer;
     }
 
     .gradient {
@@ -279,25 +280,174 @@ section {
 
   .section-box {
     width: 33vw;
-    height: 40vh;
+    height: 500px;
     background: #ececec1e;
     border-radius: 8px;
     border: 1px solid #cfcfcf41;
-    padding: 1em;
+    padding: 0.2em;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: inset 0 0 2px 2px #dbdbdb15;
-    cursor: pointer;
     position: relative;
     opacity: 0;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
     animation: boxes 2s cubic-bezier(0.42, 0, 0, 1.71) 2.4s forwards,
       pulse 4s infinite 4.25s;
 
     &:hover {
       animation-play-state: paused;
+      box-shadow: 0px 0px 20px 10px rgba(71, 71, 71, 0.5);
+      border-color: #8b77fca9;
+      padding: 0;
+
+      .box-banner {
+        opacity: 1;
+        transition: opacity 0.4s ease;
+      }
+
+      img {
+        height: 200px;
+        border-bottom: none;
+        filter: grayscale(100%) blur(2px);
+        object-fit: cover;
+        opacity: 0.5;
+        transform: scale(1.5);
+        transition: height transform 0.8s ease, border-bottom 0.2s 0.6s ease-in;
+      }
+
+      .box-text {
+        height: 30vh;
+        transition: height 0.4s ease, border-top 0.2s 0.6s ease-in,
+          margin-top 0.8s ease;
+        margin-top: 2.75em;
+        border-top: 1px solid #8b77fca9;
+
+        h2 {
+          padding-bottom: 0.5em;
+          color: #8b77fc;
+        }
+
+        p {
+          opacity: 1;
+          transition: opacity 0.8s ease-in-out;
+        }
+      }
+    }
+
+    .box-banner {
+      color: #8b77fc;
+      text-transform: uppercase;
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      border-radius: 5px;
+      border: 1px solid #cfcfcf41;
+      border-right: 7px solid #8b77fc;
+      box-shadow: inset 0 0 2px 2px #dbdbdb15;
+      padding: 0.25em 1em;
+      background-image: var(--gradient-01);
+      font-size: 0.9rem;
+      text-align: center;
+      letter-spacing: 0.15em;
+      font-weight: 500;
+      opacity: 0.8;
+      z-index: 1;
+      transition: all 0.4s ease;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom: 5px solid #cfcfcf7a;
+      padding-bottom: 0.2em;
+      filter: brightness(50%) grayscale(0);
+      transition: all 1s ease;
+    }
+
+    .box-text {
+      position: relative;
+      padding: 1.25em 1em;
+      display: flex;
+      flex-direction: column;
+      border-top: none;
+      transition: all 0.4s ease-in-out;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      h2 {
+        font-weight: 500;
+
+        a {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #8b77fc;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            color: #8b77fc;
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.75;
+        margin: 0;
+        opacity: 0;
+        text-align: justify;
+
+        span {
+          color: #8b77fc;
+
+          a {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 83.5%;
+              height: 2px;
+              background: #8b77fc;
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+              color: #8b77fc;
+              &::after {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
     }
   }
 
