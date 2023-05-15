@@ -168,12 +168,13 @@ header nav .navbar {
   width: 100%;
 }
 header nav .navbar li {
-  width: 140px;
+  margin: 0;
+  padding: 0;
+  width: 110px;
   text-align: center;
 }
 header nav .navbar li + li {
   border-left: 1px solid rgba(207, 207, 207, 0.2549019608);
-  text-align: center;
 }
 header nav:nth-child(2) {
   width: auto;
@@ -278,7 +279,7 @@ main .image-wrapper .gradient-container div:nth-child(2) {
 main .image-wrapper .gradient-container div:nth-child(3) {
   height: 65%;
   width: 80%;
-  background-color: hsl(257, 40%, 48%);
+  background-color: hsl(293, 40%, 48%);
   bottom: -30%;
   right: -20%;
   animation-duration: 4s;

@@ -156,6 +156,7 @@ header {
 
         &:hover {
           color: #8b77fc;
+
           &::after {
             transform: scaleX(1);
           }
@@ -181,13 +182,14 @@ header {
       width: 100%;
 
       li {
-        width: 140px;
+        margin: 0;
+        padding: 0;
+        width: 110px;
         text-align: center;
       }
 
       li + li {
         border-left: 1px solid #cfcfcf41;
-        text-align: center;
       }
     }
   }
@@ -327,7 +329,7 @@ main {
       div:nth-child(3) {
         height: 65%;
         width: 80%;
-        background-color: hsl(257, 40%, 48%);
+        background-color: hsl(293, 40%, 48%);
         bottom: -30%;
         right: -20%;
         animation-duration: 4s;
