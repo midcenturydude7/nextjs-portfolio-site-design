@@ -11,7 +11,7 @@
 }
 
 :root {
-  --card-height: 30vh;
+  --card-height: 32vh;
   --card-width: calc(var(--card-height) / 1);
 
   --clr-1: hsl(240deg 85% 45%) 0%;
@@ -159,7 +159,7 @@
 
 @media (min-width: 1800px) {
   :root {
-    --card-height: 27vh;
+    --card-height: 28vh;
   }
 }
 
