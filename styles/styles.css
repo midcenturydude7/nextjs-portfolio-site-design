@@ -185,7 +185,7 @@ header nav:nth-child(2) {
 }
 header li + li {
   margin-left: 1em;
-  padding: 0.2475em 0;
+  padding: 0.325em 0;
 }
 
 /* MAIN: HERO SECTION */
