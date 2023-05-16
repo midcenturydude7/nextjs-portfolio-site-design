@@ -28,7 +28,7 @@ sectionBox.addEventListener("pointerout", () => {
   );
   footerElem.style.setProperty(
     "--slide-03",
-    "slide-up-content 1s ease-in-out forwards"
+    "slide-up-content 1s ease-in forwards"
   );
 });
 
@@ -52,6 +52,6 @@ sectionBoxTwo.addEventListener("pointerout", () => {
   );
   footerElem.style.setProperty(
     "--slide-03",
-    "slide-up-content 1s ease-in-out forwards"
+    "slide-up-content 1s ease-in forwards"
   );
 });
