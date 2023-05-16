@@ -102,7 +102,7 @@
 .gradient-hero img {
   border-radius: 50%;
   margin: -0.5px 0 0 -0.25px;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .gradient-hero::before {
@@ -115,10 +115,10 @@
   border-radius: 50%;
   background-image: radial-gradient(
     var(--rotate),
-    #5ddcff,
-    #3c67e3,
+    #26d0ff,
+    #7493f0,
     43%,
-    #4e00c2
+    #6e29d6
   );
   z-index: -1;
   animation: spin 10s linear infinite;
