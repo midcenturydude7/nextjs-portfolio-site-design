@@ -241,131 +241,131 @@ main {
   // }
 
   /** GRADIENT HERO IMAGAGE */
-  .image-wrapper {
-    position: relative;
-    width: 16em;
-    height: 16em;
-    margin: 0 2em 0 0;
-    padding: 0;
-    transition: all 1s ease;
-    // opacity: 0;
-    // animation: hero-image 1s ease 0.5s forwards;
+  // .image-wrapper {
+  //   position: relative;
+  //   width: 16em;
+  //   height: 16em;
+  //   margin: 0 2em 0 0;
+  //   padding: 0;
+  //   transition: all 1s ease;
+  //   // opacity: 0;
+  //   // animation: hero-image 1s ease 0.5s forwards;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 3%;
-      left: 3.5%;
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      background-image: url("../images/MG_Avatar.jpg");
-      background-size: cover;
-      opacity: 0.6;
-      box-shadow: 0 0 30px 50px #837aa83b;
-    }
-    .gradient-container {
-      height: 17em;
-      width: 17em;
-      margin: auto;
-      position: relative;
-      border-radius: 50%;
-      overflow: hidden;
-      animation: spin 8s infinite linear;
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 3%;
+  //     left: 3.5%;
+  //     height: 100%;
+  //     width: 100%;
+  //     border-radius: 50%;
+  //     background-image: url("../images/MG_Avatar.jpg");
+  //     background-size: cover;
+  //     opacity: 0.6;
+  //     box-shadow: 0 0 30px 50px #837aa83b;
+  //   }
+  //   .gradient-container {
+  //     height: 17em;
+  //     width: 17em;
+  //     margin: auto;
+  //     position: relative;
+  //     border-radius: 50%;
+  //     overflow: hidden;
+  //     animation: spin 8s infinite linear;
 
-      &::before {
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        backdrop-filter: blur(2.1em);
-      }
+  //     &::before {
+  //       position: absolute;
+  //       content: "";
+  //       height: 100%;
+  //       width: 100%;
+  //       border-radius: 50%;
+  //       backdrop-filter: blur(2.1em);
+  //     }
 
-      &::after {
-        position: absolute;
-        content: "";
-        height: 95%;
-        width: 95%;
-        background-color: rgb(1, 8, 22);
-        top: 2.5%;
-        left: 2.5%;
-        border-radius: 50%;
-        opacity: 0.5;
-        animation: no-rotate 10s infinite linear;
-      }
+  //     &::after {
+  //       position: absolute;
+  //       content: "";
+  //       height: 95%;
+  //       width: 95%;
+  //       background-color: rgb(1, 8, 22);
+  //       top: 2.5%;
+  //       left: 2.5%;
+  //       border-radius: 50%;
+  //       opacity: 0.5;
+  //       animation: no-rotate 10s infinite linear;
+  //     }
 
-      div {
-        position: absolute;
-        border-radius: 50%;
-        z-index: -1;
-        animation: scale-up infinite;
+  //     div {
+  //       position: absolute;
+  //       border-radius: 50%;
+  //       z-index: -1;
+  //       animation: scale-up infinite;
 
-        &::after {
-          filter: blur(10rem);
-        }
-      }
+  //       &::after {
+  //         filter: blur(10rem);
+  //       }
+  //     }
 
-      div:nth-child(1) {
-        height: 90%;
-        width: 100%;
-        background-color: hsl(240deg 85% 45%);
-        left: -5%;
-        top: -5%;
-        animation-duration: 2s;
-        animation-delay: 3s;
-      }
+  //     div:nth-child(1) {
+  //       height: 90%;
+  //       width: 100%;
+  //       background-color: hsl(240deg 85% 45%);
+  //       left: -5%;
+  //       top: -5%;
+  //       animation-duration: 2s;
+  //       animation-delay: 3s;
+  //     }
 
-      div:nth-child(2) {
-        height: 80%;
-        width: 70%;
-        background-color: hsl(209, 90%, 42%);
-        top: 15%;
-        right: -15%;
-        animation-duration: 10s;
-        animation-delay: 7s;
-      }
+  //     div:nth-child(2) {
+  //       height: 80%;
+  //       width: 70%;
+  //       background-color: hsl(209, 90%, 42%);
+  //       top: 15%;
+  //       right: -15%;
+  //       animation-duration: 10s;
+  //       animation-delay: 7s;
+  //     }
 
-      div:nth-child(3) {
-        height: 65%;
-        width: 80%;
-        background-color: hsl(293, 40%, 48%);
-        bottom: -30%;
-        right: -20%;
-        animation-duration: 4s;
-        animation-delay: 2.2s;
-      }
+  //     div:nth-child(3) {
+  //       height: 65%;
+  //       width: 80%;
+  //       background-color: hsl(293, 40%, 48%);
+  //       bottom: -30%;
+  //       right: -20%;
+  //       animation-duration: 4s;
+  //       animation-delay: 2.2s;
+  //     }
 
-      div:nth-child(4) {
-        height: 50%;
-        width: 75%;
-        background-color: hsl(261deg 98% 35%);
-        bottom: -5%;
-        left: 8%;
-        animation-duration: 7s;
-        animation-delay: 6s;
-      }
+  //     div:nth-child(4) {
+  //       height: 50%;
+  //       width: 75%;
+  //       background-color: hsl(261deg 98% 35%);
+  //       bottom: -5%;
+  //       left: 8%;
+  //       animation-duration: 7s;
+  //       animation-delay: 6s;
+  //     }
 
-      div:nth-child(5) {
-        height: 40%;
-        width: 55%;
-        background-color: hsl(214, 75%, 61%);
-        top: 50%;
-        left: 0;
-        animation-duration: 2.5s;
-        animation-delay: 4s;
-      }
+  //     div:nth-child(5) {
+  //       height: 40%;
+  //       width: 55%;
+  //       background-color: hsl(214, 75%, 61%);
+  //       top: 50%;
+  //       left: 0;
+  //       animation-duration: 2.5s;
+  //       animation-delay: 4s;
+  //     }
 
-      div:nth-child(6) {
-        height: 25%;
-        width: 55%;
-        background-color: hsl(295, 86%, 44%);
-        top: 45%;
-        left: -15%;
-        animation-duration: 9s;
-      }
-    }
-  }
+  //     div:nth-child(6) {
+  //       height: 25%;
+  //       width: 55%;
+  //       background-color: hsl(295, 86%, 44%);
+  //       top: 45%;
+  //       left: -15%;
+  //       animation-duration: 9s;
+  //     }
+  //   }
+  // }
 
   .main-content {
     display: flex;
@@ -760,21 +760,31 @@ section {
   main {
     justify-content: center;
 
-    .hero-image--container {
-      margin-right: 2.5em;
-    }
-
     .main-content {
-      margin-left: 2.5em;
+      margin-left: 3em;
     }
   }
 }
 
-@media (min-width: 2000px) {
-  header {
-    width: 70%;
-  }
+@media (min-width: 1500px) {
+  main {
+    .main-content {
+      .main-title {
+        font-size: 4.5vw;
+      }
 
+      .gradient {
+        font-size: 5.5vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
   main {
     .main-content {
       .main-title {
@@ -792,8 +802,48 @@ section {
   }
 }
 
+@media (min-width: 2000px) {
+  header {
+    width: 70%;
+  }
+
+  main {
+    .main-content {
+      margin-left: 5em;
+
+      .main-title {
+        font-size: 3.75vw;
+      }
+
+      .gradient {
+        font-size: 4.75vw;
+      }
+
+      p {
+        font-size: 1.75vw;
+      }
+    }
+  }
+}
+
 @media (min-width: 2500px) {
   header {
     width: 55%;
+  }
+
+  main {
+    .main-content {
+      .main-title {
+        font-size: 3.5vw;
+      }
+
+      .gradient {
+        font-size: 4.5vw;
+      }
+
+      p {
+        font-size: 1.5vw;
+      }
+    }
   }
 }
