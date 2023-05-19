@@ -232,7 +232,7 @@ main .main-content .main-terminal {
   width: 100%;
   border-top: 1px solid rgba(207, 207, 207, 0.2549019608);
   margin-left: -0.125em;
-  padding-left: 2em;
+  padding: 0 1.25em 0 7em;
 }
 main .main-content .main-terminal .terminal-window {
   width: 600px;
