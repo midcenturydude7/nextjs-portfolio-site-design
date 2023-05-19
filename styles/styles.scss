@@ -260,7 +260,7 @@ main {
 
       .terminal-window {
         width: 600px;
-        height: 100px;
+        height: auto;
         margin-top: 2em;
         border: 1px solid #cfcfcf41;
         border-right: 10px solid #8b77fc;
@@ -350,21 +350,21 @@ main {
           }
         }
 
-        .content {
-          padding: 1em;
+        .console-container {
+          display: flex;
+          padding: 1.5em 1.25em 2em;
           font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
 
-          p {
-            position: relative;
-            font-size: 1.2rem;
+          .hidden {
+            opacity: 0;
+          }
 
-            &::after {
-              position: absolute;
-              content: "|";
-              top: 1px;
-              left: 17px;
-              font-size: 1.1rem;
-              animation: blink 0.7s infinite;
+          p {
+            font-size: 1.2rem;
+            color: #00ff00;
+
+            #text {
+              margin-left: 0.5em;
             }
           }
         }
