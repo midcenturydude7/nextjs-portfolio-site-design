@@ -58,7 +58,7 @@ sectionBoxTwo.addEventListener("pointerout", () => {
 consoleText(
   ["I build things for the web.", "Check out my featured projects below..."],
   "text",
-  ["#00ff00", "#00ff00"]
+  ["#00ccff", "#00ccff"]
 );
 
 function consoleText(words, id, colors) {
@@ -107,5 +107,5 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 400);
+  }, 200);
 }
