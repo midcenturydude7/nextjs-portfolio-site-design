@@ -239,8 +239,10 @@ main .main-content .main-terminal .terminal-window {
   height: 100px;
   margin-top: 2em;
   border: 1px solid rgba(207, 207, 207, 0.2549019608);
+  border-right: 10px solid #8b77fc;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 main .main-content .main-terminal .terminal-window .header {
   background: rgba(236, 236, 236, 0.1176470588);

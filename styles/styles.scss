@@ -263,8 +263,10 @@ main {
         height: 100px;
         margin-top: 2em;
         border: 1px solid #cfcfcf41;
+        border-right: 10px solid #8b77fc;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
 
         .header {
           background: #ececec1e;
