@@ -11,7 +11,7 @@
 }
 
 :root {
-  --card-height: 32vh;
+  --card-height: 27vh;
   --card-width: calc(var(--card-height) / 1);
 
   --clr-1: hsl(240deg 85% 45%) 0%;
@@ -167,14 +167,20 @@
   }
 }
 
+@media (min-width: 1000px) {
+  :root {
+    --card-height: 25vh;
+  }
+}
+
 @media (min-width: 1800px) {
   :root {
-    --card-height: 28vh;
+    --card-height: 23vh;
   }
 }
 
 @media (min-width: 2500px) {
   :root {
-    --card-height: 25vh;
+    --card-height: 20vh;
   }
 }

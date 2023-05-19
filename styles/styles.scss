@@ -213,159 +213,10 @@ main {
   width: 85%;
   max-width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0 0 0.75em 0;
   padding: 0;
-
-  // .hero-image--container {
-  //   width: 25%;
-  //   margin: 0;
-  //   padding: 0;
-  //   border-radius: 50%;
-  //   display: flex;
-  //   justify-content: center;
-  //   position: relative;
-  //   opacity: 0;
-  //   animation: hero-image 1s ease-in-out 0.5s forwards;
-
-  //   &::after {
-  //     filter: blur(3.5rem);
-  //   }
-
-  //   .hero-image {
-  //     padding: 0;
-  //     border-radius: 50%;
-  //     border: 5px solid #8b77fc;
-  //   }
-  // }
-
-  /** GRADIENT HERO IMAGAGE */
-  // .image-wrapper {
-  //   position: relative;
-  //   width: 16em;
-  //   height: 16em;
-  //   margin: 0 2em 0 0;
-  //   padding: 0;
-  //   transition: all 1s ease;
-  //   // opacity: 0;
-  //   // animation: hero-image 1s ease 0.5s forwards;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 3%;
-  //     left: 3.5%;
-  //     height: 100%;
-  //     width: 100%;
-  //     border-radius: 50%;
-  //     background-image: url("../images/MG_Avatar.jpg");
-  //     background-size: cover;
-  //     opacity: 0.6;
-  //     box-shadow: 0 0 30px 50px #837aa83b;
-  //   }
-  //   .gradient-container {
-  //     height: 17em;
-  //     width: 17em;
-  //     margin: auto;
-  //     position: relative;
-  //     border-radius: 50%;
-  //     overflow: hidden;
-  //     animation: spin 8s infinite linear;
-
-  //     &::before {
-  //       position: absolute;
-  //       content: "";
-  //       height: 100%;
-  //       width: 100%;
-  //       border-radius: 50%;
-  //       backdrop-filter: blur(2.1em);
-  //     }
-
-  //     &::after {
-  //       position: absolute;
-  //       content: "";
-  //       height: 95%;
-  //       width: 95%;
-  //       background-color: rgb(1, 8, 22);
-  //       top: 2.5%;
-  //       left: 2.5%;
-  //       border-radius: 50%;
-  //       opacity: 0.5;
-  //       animation: no-rotate 10s infinite linear;
-  //     }
-
-  //     div {
-  //       position: absolute;
-  //       border-radius: 50%;
-  //       z-index: -1;
-  //       animation: scale-up infinite;
-
-  //       &::after {
-  //         filter: blur(10rem);
-  //       }
-  //     }
-
-  //     div:nth-child(1) {
-  //       height: 90%;
-  //       width: 100%;
-  //       background-color: hsl(240deg 85% 45%);
-  //       left: -5%;
-  //       top: -5%;
-  //       animation-duration: 2s;
-  //       animation-delay: 3s;
-  //     }
-
-  //     div:nth-child(2) {
-  //       height: 80%;
-  //       width: 70%;
-  //       background-color: hsl(209, 90%, 42%);
-  //       top: 15%;
-  //       right: -15%;
-  //       animation-duration: 10s;
-  //       animation-delay: 7s;
-  //     }
-
-  //     div:nth-child(3) {
-  //       height: 65%;
-  //       width: 80%;
-  //       background-color: hsl(293, 40%, 48%);
-  //       bottom: -30%;
-  //       right: -20%;
-  //       animation-duration: 4s;
-  //       animation-delay: 2.2s;
-  //     }
-
-  //     div:nth-child(4) {
-  //       height: 50%;
-  //       width: 75%;
-  //       background-color: hsl(261deg 98% 35%);
-  //       bottom: -5%;
-  //       left: 8%;
-  //       animation-duration: 7s;
-  //       animation-delay: 6s;
-  //     }
-
-  //     div:nth-child(5) {
-  //       height: 40%;
-  //       width: 55%;
-  //       background-color: hsl(214, 75%, 61%);
-  //       top: 50%;
-  //       left: 0;
-  //       animation-duration: 2.5s;
-  //       animation-delay: 4s;
-  //     }
-
-  //     div:nth-child(6) {
-  //       height: 25%;
-  //       width: 55%;
-  //       background-color: hsl(295, 86%, 44%);
-  //       top: 45%;
-  //       left: -15%;
-  //       animation-duration: 9s;
-  //     }
-  //   }
-  // }
 
   .main-content {
     display: flex;
@@ -381,34 +232,141 @@ main {
       font-weight: 600;
       letter-spacing: 0.03em;
       cursor: pointer;
-    }
 
-    .gradient {
-      font-size: 6.5vw;
-      font-weight: 700;
-      background-size: 200%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-stroke: 1px transparent;
-      color: rgba(255, 255, 255, 0.322);
-      background-image: var(--gradient-02);
-      background-position: left;
-      transition: background-position 2s ease;
+      .gradient {
+        font-size: 6.5vw;
+        font-weight: 700;
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+        color: rgba(255, 255, 255, 0.322);
+        background-image: var(--gradient-02);
+        background-position: left;
+        transition: background-position 2s ease;
 
-      &:hover,
-      &:focus {
-        background-position: right;
+        &:hover,
+        &:focus {
+          background-position: right;
+        }
       }
     }
 
-    p {
-      font-size: 2.75vw;
-      letter-spacing: 0.075em;
-      white-space: nowrap;
-      color: #ececec;
-      margin: 0;
-      padding: 1em;
+    .main-terminal {
+      width: 100%;
       border-top: 1px solid #cfcfcf41;
+      margin-left: -0.125em;
+      padding-left: 2em;
+
+      .terminal-window {
+        width: 600px;
+        height: 100px;
+        margin-top: 2em;
+        border: 1px solid #cfcfcf41;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        .header {
+          background: #ececec1e;
+          border-bottom: 1px solid #cfcfcf41;
+
+          ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 0.5em;
+            padding: 0.5em 0;
+            list-style-type: none;
+
+            .button {
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              margin: 0 0.25em;
+              border: 1px solid #cfcfcf41;
+            }
+
+            .button.first {
+              background-image: linear-gradient(
+                340deg,
+                hsl(0deg 0% 95%) 0%,
+                hsl(263deg 13% 90%) 0%,
+                hsl(262deg 17% 86%) 0%,
+                hsl(262deg 20% 81%) 0%,
+                hsl(262deg 21% 77%) 1%,
+                hsl(261deg 22% 72%) 3%,
+                hsl(261deg 22% 68%) 7%,
+                hsl(261deg 23% 64%) 12%,
+                hsl(260deg 23% 59%) 19%,
+                hsl(259deg 23% 55%) 30%,
+                hsl(259deg 23% 51%) 45%,
+                hsl(258deg 26% 47%) 63%,
+                hsl(257deg 30% 43%) 82%,
+                hsl(256deg 36% 39%) 100%
+              );
+            }
+
+            .button.second {
+              background-image: linear-gradient(
+                340deg,
+                hsl(0deg 0% 100%) 0%,
+                hsl(250deg 63% 96%) 0%,
+                hsl(250deg 63% 93%) 0%,
+                hsl(249deg 62% 89%) 0%,
+                hsl(248deg 62% 86%) 1%,
+                hsl(248deg 61% 82%) 3%,
+                hsl(247deg 60% 79%) 7%,
+                hsl(246deg 60% 75%) 12%,
+                hsl(244deg 59% 72%) 19%,
+                hsl(243deg 59% 68%) 30%,
+                hsl(241deg 58% 65%) 45%,
+                hsl(238deg 58% 61%) 63%,
+                hsl(235deg 59% 56%) 82%,
+                hsl(230deg 61% 50%) 100%
+              );
+            }
+
+            .button.third {
+              background-image: linear-gradient(
+                340deg,
+                hsl(0deg 0% 100%) 0%,
+                hsl(220deg 57% 97%) 0%,
+                hsl(220deg 57% 93%) 0%,
+                hsl(219deg 57% 90%) 0%,
+                hsl(219deg 57% 86%) 1%,
+                hsl(218deg 57% 83%) 3%,
+                hsl(218deg 57% 80%) 7%,
+                hsl(217deg 57% 76%) 12%,
+                hsl(216deg 57% 72%) 19%,
+                hsl(216deg 57% 69%) 30%,
+                hsl(214deg 58% 65%) 45%,
+                hsl(213deg 58% 60%) 63%,
+                hsl(212deg 59% 56%) 82%,
+                hsl(209deg 61% 50%) 100%
+              );
+            }
+          }
+        }
+
+        .content {
+          padding: 1em;
+          font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+
+          p {
+            position: relative;
+            font-size: 1.2rem;
+
+            &::after {
+              position: absolute;
+              content: "|";
+              top: 1px;
+              left: 17px;
+              font-size: 1.1rem;
+              animation: blink 0.7s infinite;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -755,30 +713,35 @@ section {
   }
 }
 
-/* MEDIA QUERIES */
-@media (min-width: 1000px) {
-  main {
-    justify-content: center;
-
-    .main-content {
-      margin-left: 3em;
-    }
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
+/* MEDIA QUERIES */
 @media (min-width: 1500px) {
   main {
     .main-content {
       .main-title {
         font-size: 4.5vw;
+
+        .gradient {
+          font-size: 5.5vw;
+        }
       }
 
-      .gradient {
-        font-size: 5.5vw;
-      }
-
-      p {
-        font-size: 2.5vw;
+      .main-terminal {
+        margin-left: -0.3em;
+        p {
+          font-size: 2.25vw;
+        }
       }
     }
   }
@@ -789,14 +752,17 @@ section {
     .main-content {
       .main-title {
         font-size: 4vw;
+
+        .gradient {
+          font-size: 5vw;
+        }
       }
 
-      .gradient {
-        font-size: 5vw;
-      }
-
-      p {
-        font-size: 2vw;
+      .main-terminal {
+        margin-left: -0.2em;
+        p {
+          font-size: 2vw;
+        }
       }
     }
   }
@@ -809,18 +775,19 @@ section {
 
   main {
     .main-content {
-      margin-left: 5em;
-
       .main-title {
         font-size: 3.75vw;
+
+        .gradient {
+          font-size: 4.75vw;
+        }
       }
 
-      .gradient {
-        font-size: 4.75vw;
-      }
-
-      p {
-        font-size: 1.75vw;
+      .main-terminal {
+        margin-left: -0.25em;
+        p {
+          font-size: 1.75vw;
+        }
       }
     }
   }
@@ -835,14 +802,17 @@ section {
     .main-content {
       .main-title {
         font-size: 3.5vw;
+
+        .gradient {
+          font-size: 4.5vw;
+        }
       }
 
-      .gradient {
-        font-size: 4.5vw;
-      }
-
-      p {
-        font-size: 1.5vw;
+      .main-terminal {
+        margin-left: -0.35em;
+        p {
+          font-size: 1.5vw;
+        }
       }
     }
   }

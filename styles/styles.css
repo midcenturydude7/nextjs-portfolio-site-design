@@ -193,11 +193,10 @@ main {
   width: 85%;
   max-width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0 0 0.75em 0;
   padding: 0;
-  /** GRADIENT HERO IMAGAGE */
 }
 main .main-content {
   display: flex;
@@ -214,7 +213,7 @@ main .main-content .main-title {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-main .main-content .gradient {
+main .main-content .main-title .gradient {
   font-size: 6.5vw;
   font-weight: 700;
   background-size: 200%;
@@ -226,17 +225,66 @@ main .main-content .gradient {
   background-position: left;
   transition: background-position 2s ease;
 }
-main .main-content .gradient:hover, main .main-content .gradient:focus {
+main .main-content .main-title .gradient:hover, main .main-content .main-title .gradient:focus {
   background-position: right;
 }
-main .main-content p {
-  font-size: 2.75vw;
-  letter-spacing: 0.075em;
-  white-space: nowrap;
-  color: #ececec;
-  margin: 0;
-  padding: 1em;
+main .main-content .main-terminal {
+  width: 100%;
   border-top: 1px solid rgba(207, 207, 207, 0.2549019608);
+  margin-left: -0.125em;
+  padding-left: 2em;
+}
+main .main-content .main-terminal .terminal-window {
+  width: 600px;
+  height: 100px;
+  margin-top: 2em;
+  border: 1px solid rgba(207, 207, 207, 0.2549019608);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main .main-content .main-terminal .terminal-window .header {
+  background: rgba(236, 236, 236, 0.1176470588);
+  border-bottom: 1px solid rgba(207, 207, 207, 0.2549019608);
+}
+main .main-content .main-terminal .terminal-window .header ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.5em;
+  padding: 0.5em 0;
+  list-style-type: none;
+}
+main .main-content .main-terminal .terminal-window .header ul .button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 0.25em;
+  border: 1px solid rgba(207, 207, 207, 0.2549019608);
+}
+main .main-content .main-terminal .terminal-window .header ul .button.first {
+  background-image: linear-gradient(340deg, hsl(0, 0%, 95%) 0%, hsl(263, 13%, 90%) 0%, hsl(262, 17%, 86%) 0%, hsl(262, 20%, 81%) 0%, hsl(262, 21%, 77%) 1%, hsl(261, 22%, 72%) 3%, hsl(261, 22%, 68%) 7%, hsl(261, 23%, 64%) 12%, hsl(260, 23%, 59%) 19%, hsl(259, 23%, 55%) 30%, hsl(259, 23%, 51%) 45%, hsl(258, 26%, 47%) 63%, hsl(257, 30%, 43%) 82%, hsl(256, 36%, 39%) 100%);
+}
+main .main-content .main-terminal .terminal-window .header ul .button.second {
+  background-image: linear-gradient(340deg, hsl(0, 0%, 100%) 0%, hsl(250, 63%, 96%) 0%, hsl(250, 63%, 93%) 0%, hsl(249, 62%, 89%) 0%, hsl(248, 62%, 86%) 1%, hsl(248, 61%, 82%) 3%, hsl(247, 60%, 79%) 7%, hsl(246, 60%, 75%) 12%, hsl(244, 59%, 72%) 19%, hsl(243, 59%, 68%) 30%, hsl(241, 58%, 65%) 45%, hsl(238, 58%, 61%) 63%, hsl(235, 59%, 56%) 82%, hsl(230, 61%, 50%) 100%);
+}
+main .main-content .main-terminal .terminal-window .header ul .button.third {
+  background-image: linear-gradient(340deg, hsl(0, 0%, 100%) 0%, hsl(220, 57%, 97%) 0%, hsl(220, 57%, 93%) 0%, hsl(219, 57%, 90%) 0%, hsl(219, 57%, 86%) 1%, hsl(218, 57%, 83%) 3%, hsl(218, 57%, 80%) 7%, hsl(217, 57%, 76%) 12%, hsl(216, 57%, 72%) 19%, hsl(216, 57%, 69%) 30%, hsl(214, 58%, 65%) 45%, hsl(213, 58%, 60%) 63%, hsl(212, 59%, 56%) 82%, hsl(209, 61%, 50%) 100%);
+}
+main .main-content .main-terminal .terminal-window .content {
+  padding: 1em;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+}
+main .main-content .main-terminal .terminal-window .content p {
+  position: relative;
+  font-size: 1.2rem;
+}
+main .main-content .main-terminal .terminal-window .content p::after {
+  position: absolute;
+  content: "|";
+  top: 1px;
+  left: 17px;
+  font-size: 1.1rem;
+  animation: blink 0.7s infinite;
 }
 
 section {
@@ -532,34 +580,43 @@ section .section-box:nth-child(2):hover {
     transform: scale(1.8);
   }
 }
-/* MEDIA QUERIES */
-@media (min-width: 1000px) {
-  main {
-    justify-content: center;
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  main .main-content {
-    margin-left: 3em;
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
+/* MEDIA QUERIES */
 @media (min-width: 1500px) {
   main .main-content .main-title {
     font-size: 4.5vw;
   }
-  main .main-content .gradient {
+  main .main-content .main-title .gradient {
     font-size: 5.5vw;
   }
-  main .main-content p {
-    font-size: 2.5vw;
+  main .main-content .main-terminal {
+    margin-left: -0.3em;
+  }
+  main .main-content .main-terminal p {
+    font-size: 2.25vw;
   }
 }
 @media (min-width: 1800px) {
   main .main-content .main-title {
     font-size: 4vw;
   }
-  main .main-content .gradient {
+  main .main-content .main-title .gradient {
     font-size: 5vw;
   }
-  main .main-content p {
+  main .main-content .main-terminal {
+    margin-left: -0.2em;
+  }
+  main .main-content .main-terminal p {
     font-size: 2vw;
   }
 }
@@ -567,16 +624,16 @@ section .section-box:nth-child(2):hover {
   header {
     width: 70%;
   }
-  main .main-content {
-    margin-left: 5em;
-  }
   main .main-content .main-title {
     font-size: 3.75vw;
   }
-  main .main-content .gradient {
+  main .main-content .main-title .gradient {
     font-size: 4.75vw;
   }
-  main .main-content p {
+  main .main-content .main-terminal {
+    margin-left: -0.25em;
+  }
+  main .main-content .main-terminal p {
     font-size: 1.75vw;
   }
 }
@@ -587,10 +644,13 @@ section .section-box:nth-child(2):hover {
   main .main-content .main-title {
     font-size: 3.5vw;
   }
-  main .main-content .gradient {
+  main .main-content .main-title .gradient {
     font-size: 4.5vw;
   }
-  main .main-content p {
+  main .main-content .main-terminal {
+    margin-left: -0.35em;
+  }
+  main .main-content .main-terminal p {
     font-size: 1.5vw;
   }
 }/*# sourceMappingURL=styles.css.map */
