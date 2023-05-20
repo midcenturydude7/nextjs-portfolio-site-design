@@ -94,7 +94,24 @@ img {
     top: 90%;
     transition: transform 1s ease-in-out;
     transform-origin: 0 0;
-    background: #8b77fc;
+    background-image: linear-gradient(
+      125deg,
+      hsl(249deg 96% 73%) 0%,
+      hsl(251deg 95% 71%) 4%,
+      hsl(253deg 94% 69%) 8%,
+      hsl(256deg 93% 68%) 14%,
+      hsl(258deg 92% 66%) 21%,
+      hsl(260deg 91% 63%) 32%,
+      hsl(263deg 89% 61%) 71%,
+      hsl(266deg 88% 58%) 86%,
+      hsl(256deg 89% 64%) 91%,
+      hsl(247deg 87% 68%) 94%,
+      hsl(239deg 82% 71%) 96%,
+      hsl(233deg 75% 71%) 98%,
+      hsl(229deg 64% 71%) 99%,
+      hsl(226deg 51% 72%) 99%,
+      hsl(224deg 34% 73%) 100%
+    );
     box-shadow: 0 0 80px 120px #0a0025;
     opacity: 0;
     animation: var(--slide-02, slide-up-bounce 1.75s ease-in 1s forwards);
@@ -547,23 +564,72 @@ section {
 /* FOOTER SECTION */
 .footer {
   position: absolute;
-  bottom: 4vh;
+  bottom: 5vh;
   left: 0;
   right: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5em;
   z-index: 10;
   transition: all 0.3s ease;
   opacity: 0;
   animation: var(--slide-03, slide-up-content 1s ease-in-out 1.5s forwards);
 
   p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #342b66;
+    flex-grow: 1;
+    padding-left: 7em;
+    text-align: center;
 
     span {
       padding-left: 0.25em;
       border-left: 2.5px solid #342b668e;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      font-size: 2rem;
+      color: #342b66;
+    }
+
+    li + li {
+      margin-left: 1em;
+    }
+
+    li a {
+      text-decoration: none;
+      font-size: inherit;
+
+      transition: all 0.3s ease-in-out;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #bfb5f7;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: #bfb5f7;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
     }
   }
 }
