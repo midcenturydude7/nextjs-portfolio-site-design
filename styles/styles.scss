@@ -594,8 +594,7 @@ section {
     list-style-type: none;
     display: flex;
 
-    li,
-    li a:visited {
+    li {
       font-size: 2rem;
       color: #342b66;
     }
@@ -610,6 +609,11 @@ section {
 
       transition: all 0.3s ease-in-out;
       position: relative;
+
+      a,
+      a:visited {
+        color: inherit;
+      }
 
       &::after {
         content: "";
