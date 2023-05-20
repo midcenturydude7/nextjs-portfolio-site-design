@@ -84,7 +84,7 @@ function consoleText(words, id, colors) {
         target.setAttribute("style", "color:" + colors[0]);
         letterCount += x;
         waiting = false;
-      }, 1000);
+      }, 500);
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function () {
@@ -96,7 +96,7 @@ function consoleText(words, id, colors) {
       target.innerHTML = words[0].substring(0, letterCount);
       letterCount += x;
     }
-  }, 120);
+  }, 100);
 
   window.setInterval(function () {
     if (visible === true) {
@@ -107,5 +107,5 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 200);
+  }, 150);
 }
