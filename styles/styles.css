@@ -466,12 +466,12 @@ section .section-box:nth-child(2):hover {
 .footer ul li a {
   text-decoration: none;
   font-size: inherit;
+  color: #342b66;
   transition: all 0.3s ease-in-out;
   position: relative;
 }
-.footer ul li a a,
-.footer ul li a a:visited {
-  color: inherit;
+.footer ul li a :visited {
+  color: #342b66 !important;
 }
 .footer ul li a::after {
   content: "";
