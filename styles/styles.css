@@ -77,10 +77,10 @@ img {
   --slide-01: slide-up-bounce 1.75s ease-in 1s forwards;
 }
 .wrapper::after {
+  position: absolute;
   content: "";
   height: 40rem;
   left: -5%;
-  position: absolute;
   right: -5%;
   top: 90%;
   transition: transform 1s ease-in-out;

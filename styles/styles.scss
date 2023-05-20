@@ -86,10 +86,10 @@ img {
   // --slide-02: slide-down 1.75s ease-in-out forwards;
 
   &::after {
+    position: absolute;
     content: "";
     height: 40rem;
     left: -5%;
-    position: absolute;
     right: -5%;
     top: 90%;
     transition: transform 1s ease-in-out;
