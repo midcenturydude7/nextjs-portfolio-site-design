@@ -564,7 +564,7 @@ section {
 /* FOOTER SECTION */
 .footer {
   position: absolute;
-  bottom: 5vh;
+  bottom: 4.5vh;
   left: 0;
   right: 0;
   display: flex;
@@ -594,7 +594,8 @@ section {
     list-style-type: none;
     display: flex;
 
-    li {
+    li,
+    li a:visited {
       font-size: 2rem;
       color: #342b66;
     }

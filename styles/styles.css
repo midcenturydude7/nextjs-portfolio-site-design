@@ -428,7 +428,7 @@ section .section-box:nth-child(2):hover {
 /* FOOTER SECTION */
 .footer {
   position: absolute;
-  bottom: 5vh;
+  bottom: 4.5vh;
   left: 0;
   right: 0;
   display: flex;
@@ -456,7 +456,8 @@ section .section-box:nth-child(2):hover {
   list-style-type: none;
   display: flex;
 }
-.footer ul li {
+.footer ul li,
+.footer ul li a:visited {
   font-size: 2rem;
   color: #342b66;
 }
