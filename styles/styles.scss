@@ -118,23 +118,36 @@
     hsl(209deg 61% 50%) 100%
   );
   --gradient-box: linear-gradient(
-    160deg,
+    -20deg,
     hsla(269, 66%, 8%, 0.507) 0%,
     hsla(268, 66%, 15%, 0.507) 26%,
     hsla(264, 64%, 23%, 0.514) 52%,
     hsla(263, 63%, 30%, 0.651) 69%,
     hsla(260, 63%, 38%, 0.658) 82%,
     hsla(258, 62%, 45%, 0.719) 90%,
-    hsla(256, 61%, 52%, 0.781) 95%,
-    hsla(254, 60%, 60%, 0.829) 99%,
-    hsla(252, 60%, 67%, 0.918) 100%,
-    hsla(249, 58%, 75%, 0.952) 100%
+    hsla(256, 61%, 52%, 0.63) 95%,
+    hsla(254, 60%, 60%, 0.521) 99%,
+    hsla(252, 60%, 67%, 0.411) 100%,
+    hsla(249, 58%, 75%, 0.11) 100%
+  );
+  --gradient-box-solid: linear-gradient(
+    -20deg,
+    hsl(269, 66%, 8%) 0%,
+    hsl(269, 66%, 15%) 26%,
+    hsl(264, 64%, 23%) 52%,
+    hsl(263, 63%, 30%) 69%,
+    hsl(260, 63%, 38%) 82%,
+    hsl(258, 62%, 45%) 90%,
+    hsl(256, 61%, 52%) 95%,
+    hsl(254, 60%, 60%) 99%,
+    hsl(252, 60%, 67%) 100%,
+    hsl(249, 58%, 75%) 100%
   );
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #d4d4d4;
+  color: #bfb5f7;
 }
 
 img {
@@ -177,7 +190,7 @@ img {
     top: 90%;
     transition: transform 1s ease-in-out;
     transform-origin: 0 0;
-    background-image: var(--gradient-footer);
+    background-image: var(--gradient-box-solid);
     box-shadow: 0 0 80px 120px #0a0025;
     opacity: 0;
     animation: var(--slide-02, slide-up-bounce 1.75s ease-in 1s forwards);
@@ -218,7 +231,7 @@ header {
 
       li a {
         text-decoration: none;
-        color: #ececec;
+        color: #bfb5f7;
         font-size: inherit;
 
         transition: all 0.3s ease-in-out;
@@ -251,7 +264,7 @@ header {
       text-align: center;
       letter-spacing: 0.075em;
       font-size: 0.85rem;
-      color: #ececec;
+      color: #bfb5f7;
       padding: 0.5em 0.75em;
       border: 1px solid #cfcfcf41;
       border-radius: 5px;
@@ -315,6 +328,7 @@ main {
       font-weight: 600;
       letter-spacing: 0.03em;
       cursor: pointer;
+      color: #bfb5f7;
 
       .gradient {
         font-size: 6.5vw;
@@ -323,7 +337,7 @@ main {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-stroke: 1px transparent;
-        color: rgba(255, 255, 255, 0.322);
+        color: rgba(255, 255, 255, 0.219);
         background-image: var(--gradient-text);
         background-position: left;
         transition: background-position 2s ease;
@@ -411,12 +425,7 @@ main {
             left: 0;
             width: 101.5%;
             height: 1px;
-            // background: #8b77fc;
             box-shadow: 0 0 25px 60px rgb(1, 8, 22);
-
-            // transform: scaleX(0);
-            // transform-origin: left;
-            // transition: all 0.3s ease-in-out;
           }
         }
       }
@@ -599,7 +608,7 @@ section {
   p {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #342b66;
+    color: #8b77fc;
     flex-grow: 1;
     padding-left: 7em;
     text-align: center;
@@ -616,7 +625,7 @@ section {
 
     li {
       font-size: 2rem;
-      color: #342b66;
+      color: #8b77fc;
     }
 
     li + li {
@@ -626,13 +635,13 @@ section {
     li a {
       text-decoration: none;
       font-size: inherit;
-      color: #342b66;
+      color: #8b77fc;
 
       transition: all 0.3s ease-in-out;
       position: relative;
 
       :visited {
-        color: #342b66 !important;
+        color: #8b77fc !important;
       }
 
       &::after {
