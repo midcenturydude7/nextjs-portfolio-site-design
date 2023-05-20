@@ -107,10 +107,10 @@ function consoleText(words, id, colors) {
 consoleText(
   [
     "I build things for the web.",
-    "Check out my featured projects below...",
-    "TL;DR? I'm a self-taught, front-end developer...",
+    "I'm a self-taught, front-end developer...",
     "specializing in building web sites and...",
-    "applications using Next.js and React.",
+    "web applications using Next.js and React.",
+    "TL;DR? Check out my featured projects below...",
   ],
   "text",
   ["#00ccff", "#00ccff"]
