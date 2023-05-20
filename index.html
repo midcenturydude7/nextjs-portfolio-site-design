@@ -18,12 +18,18 @@
     <title>CSS Background Practice</title>
   </head>
   <body>
+
+    <!--WRAPPER-->
     <div class="wrapper">
+
+      <!--HEADER-->
       <header>
         <nav>
+          <!--LOGO-->
           <ul class="logo">
             <li>MG[dev]</li>
           </ul>
+          <!--PRIMARY NAVBAR-->
           <ul class="navbar">
             <li><a href="#">about</a></li>
             <li><a href="#">work</a></li>
@@ -31,6 +37,7 @@
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
+        <!--UTILS NAVBAR-->
         <nav class="navbar">
           <ul>
             <li><a href="https://github.com/midcenturydude7" target="_blank"><i class="fa-brands fa-github"></a></i></li>
@@ -39,10 +46,14 @@
           </ul>
         </nav>
       </header>
+
+      <!--MAIN-->
       <main>
+        <!--HERO IMAGE-->
         <div class="gradient-hero--container">
           <div class="gradient-hero"><img src="./images/MG_Avatar.jpg" alt="Avatar" class="hero-image" /></div>
         </div>
+        <!--HERO CONTENT-->
         <div class="main-content">
           <h1 class="main-title"><span class="gradient">Hi,</span> I'm Matt</h1>
           <div class="main-terminal">
@@ -54,6 +65,7 @@
                   <li class="button third"></li>
                 </ul>
               </div>
+              <!--TEMINAL WINDOW-->
               <div class="console-container">
                 <p>$<span id="text"></span></p>
                 <p class="console-underscore" id="console-text"> &#95;</p>
@@ -62,7 +74,10 @@
           </div>
         </div>
       </main>
+
+      <!--SECTION-->
       <section>
+        <!--PROJECT BOXES: BOX ONE-->
         <div class="section-box">
           <div class="box-banner">nextjs</div>
           <img src="images/port4.jpg" alt="Stock photo" />
@@ -76,6 +91,7 @@
             </p>
           </div>
         </div>
+        <!--PROJECT BOXES: BOX TWO-->
         <div class="section-box">
           <div class="box-banner">mern</div>
           <img src="images/port7.jpg" alt="Stock photo" />
@@ -90,6 +106,8 @@
           </div>
         </div>
       </section>
+
+      <!--FOOTER CONTENT-->
       <footer class="footer">
         <p>Copyright &copy 2023 <span>MG[dev]</span></p>
         <ul>
@@ -99,6 +117,8 @@
         </ul>
       </footer>
     </div>
+    
+    <!--JS-->
     <script src="./app.js" type="module"></script>
   </body>
 </html>
