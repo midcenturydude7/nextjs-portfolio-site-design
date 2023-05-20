@@ -356,6 +356,7 @@ main .main-content .main-terminal .terminal-window .header ul .button.third {
   background-image: var(--gradient-btnAqua);
 }
 main .main-content .main-terminal .terminal-window .console-container {
+  position: relative;
   display: flex;
   padding: 1.5em 1.25em 2em;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
@@ -369,6 +370,15 @@ main .main-content .main-terminal .terminal-window .console-container p {
 }
 main .main-content .main-terminal .terminal-window .console-container p #text {
   margin-left: 0.4em;
+}
+main .main-content .main-terminal .terminal-window .console-container::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 101.5%;
+  height: 10px;
+  box-shadow: 0 0 25px 60px rgba(6, 0, 20, 0.7411764706);
 }
 
 section {
