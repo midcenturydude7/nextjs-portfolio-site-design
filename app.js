@@ -109,8 +109,8 @@ consoleText(
     "I build things for the web.",
     "Check out my featured projects below...",
     "I'm a front-end developer...",
-    "...specializing in building web sites...",
-    "...and applications using Next.js and React.",
+    "specializing in building web sites...",
+    "and applications using Next.js and React.",
   ],
   "text",
   ["#00ccff", "#00ccff"]
