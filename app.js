@@ -1,5 +1,5 @@
 const wrapperElem = document.querySelector(".wrapper");
-const sectionBox = document.querySelector(".section-box");
+const sectionBox = document.querySelector(".section-box_container");
 const sectionBoxTwo = document.querySelector(".section-box:nth-child(2)");
 const footerElem = document.querySelector(".footer");
 
@@ -107,7 +107,7 @@ function consoleText(words, id, colors) {
 consoleText(
   [
     "I build things for the web.",
-    "I'm a self-taught, front-end developer...",
+    "I'm a self-taught, frontend developer...",
     "specializing in building web sites and...",
     "web applications using Next.js and React.",
     "TL;DR? Check out my featured projects below...",
