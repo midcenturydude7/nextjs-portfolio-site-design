@@ -428,8 +428,10 @@ section .section-box:hover {
   padding: 0;
 }
 section .section-box:hover .box-banner {
+  color: #8b77fc;
   opacity: 1;
-  transition: opacity 0.4s ease;
+  background-image: var(--gradient-logo);
+  transition: all 0.4s ease;
 }
 section .section-box:hover img {
   height: 40%;
@@ -456,7 +458,7 @@ section .section-box:hover .box-text p {
   transition: opacity 0.8s ease-in-out;
 }
 section .section-box .box-banner {
-  color: #8b77fc;
+  color: #6959c4;
   text-transform: uppercase;
   position: absolute;
   top: 12px;
@@ -466,7 +468,7 @@ section .section-box .box-banner {
   border-right: 7px solid #8b77fc;
   box-shadow: inset 0 0 2px 2px rgba(219, 219, 219, 0.0823529412);
   padding: 0.25em 1em;
-  background-image: var(--gradient-logo);
+  background: rgba(191, 181, 247, 0.8352941176);
   font-size: 0.9rem;
   text-align: center;
   letter-spacing: 0.15em;
