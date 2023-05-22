@@ -254,6 +254,7 @@ header nav .logo {
   color: #bfb5f7;
   padding: 0.5em 0.75em;
   border: 1px solid rgba(207, 207, 207, 0.2549019608);
+  border-right: 7px solid #8b77fc;
   border-radius: 5px;
   box-shadow: inset 0 0 2px 2px rgba(219, 219, 219, 0.0823529412);
   background-image: var(--gradient-logo);
@@ -431,6 +432,7 @@ section .section-box_container .section-box:hover {
 }
 section .section-box_container .section-box:hover .box-banner {
   color: #8b77fc;
+  border-right-color: #8978e7;
   opacity: 1;
   background-image: var(--gradient-logo);
   transition: all 0.4s ease;
