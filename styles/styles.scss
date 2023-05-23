@@ -179,7 +179,6 @@ img {
   );
   background: linear-gradient(0deg, rgba(1, 8, 22, 1) 80%, rgb(10, 2, 37) 98%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010816",endColorstr="#040e2f",GradientType=1);
-  --slide-01: slide-up-bounce 1.75s ease-in 1s forwards;
 
   &::after {
     position: absolute;
@@ -297,11 +296,11 @@ header {
     border-left: 1px solid #cfcfcf41;
     opacity: 0;
     animation-delay: 0.5s;
-  }
 
-  li + li {
-    margin-left: 1em;
-    padding: 0.325em 0;
+    li + li {
+      margin-left: 1em;
+      padding: 0.325em 0;
+    }
   }
 }
 

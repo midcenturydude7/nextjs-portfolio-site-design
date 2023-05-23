@@ -109,7 +109,7 @@ consoleText(
     "I build things for the web.",
     "I'm a self-taught, frontend developer...",
     "specializing in building web sites and...",
-    "web applications using Next.js and React.",
+    "web applications using React and Next.js.",
     "TL;DR? Check out my featured projects below...",
   ],
   "text",
